@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cardi B | Am I The Drama? | Official Concept Site</title>
+<meta name="description" content="Cardi B concept site. Am I The Drama? out now. The Little Miss Drama Tour made history. Music, videos, business empire, film and TV, merch.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#F7F2EA;
+  --cream2:#EFE7D8;
+  --ink:#1A1A1A;
+  --ink-soft:#4A453C;
+  --red:#B91C1C;
+  --red-dark:#8F1414;
+  --line:#D8CFC0;
+  --white:#FFFFFF;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Manrope',system-ui,-apple-system,sans-serif;
+  background:var(--cream);
+  color:var(--ink);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,.serif{font-family:'Fraunces',Georgia,serif;line-height:1.05}
+a{color:inherit}
+img{max-width:100%;display:block}
+
+/* disclaimer strip */
+.disclaimer{
+  background:var(--red);
+  color:#fff;
+  text-align:center;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:.14em;
+  padding:10px 14px;
+  text-transform:uppercase;
+  position:relative;
+  z-index:100;
+}
+
+/* nav */
+nav{
+  position:sticky;top:0;z-index:90;
+  background:rgba(247,242,234,.96);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.nav-inner{
+  max-width:1180px;margin:0 auto;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px 22px;gap:16px;
+}
+.nav-logo{
+  font-family:'Fraunces',serif;font-weight:900;font-size:26px;letter-spacing:.02em;
+  text-decoration:none;color:var(--ink);
+}
+.nav-logo span{color:var(--red)}
+.nav-links{display:flex;gap:26px;flex-wrap:wrap}
+.nav-links a{
+  text-decoration:none;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--ink-soft);padding:4px 0;border-bottom:2px solid transparent;
+}
+.nav-links a:hover{color:var(--red);border-bottom-color:var(--red)}
+
+/* hero split */
+.hero{
+  max-width:1180px;margin:0 auto;
+  display:grid;grid-template-columns:1.05fr .95fr;
+  gap:48px;align-items:center;
+  padding:64px 22px 56px;
+}
+.hero-kicker{
+  font-size:13px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--red);
+  margin-bottom:18px;
+}
+.hero h1{
+  font-size:clamp(52px,8vw,96px);
+  font-weight:900;
+  letter-spacing:-.01em;
+  margin-bottom:10px;
+}
+.hero h1 em{font-style:italic;color:var(--red);font-weight:600}
+.hero-sub{
+  font-size:19px;color:var(--ink-soft);max-width:46ch;margin:18px 0 28px;
+}
+.hero-sub strong{color:var(--ink)}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.btn{
+  display:inline-block;text-decoration:none;font-weight:800;font-size:14px;letter-spacing:.08em;text-transform:uppercase;
+  padding:15px 26px;border-radius:999px;transition:transform .15s ease,background .15s ease;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-dark)}
+.btn-outline{border:2px solid var(--ink);color:var(--ink);background:transparent}
+.btn-outline:hover{background:var(--ink);color:var(--cream)}
+.hero-meta{
+  margin-top:34px;padding-top:22px;border-top:1px solid var(--line);
+  display:flex;gap:32px;flex-wrap:wrap;
+}
+.hero-meta div{font-size:13px;color:var(--ink-soft)}
+.hero-meta b{display:block;font-family:'Fraunces',serif;font-size:26px;color:var(--ink);line-height:1.1}
+.hero-img-wrap{position:relative}
+.hero-img-wrap::before{
+  content:"";position:absolute;inset:18px -18px -18px 18px;
+  border:2px solid var(--red);z-index:0;
+}
+.hero-img{
+  position:relative;z-index:1;
+  width:100%;aspect-ratio:4/5;object-fit:cover;object-position:top;
+  border-radius:4px;
+}
+.hero-caption{
+  position:relative;z-index:1;margin-top:26px;font-size:13px;color:var(--ink-soft);
+  border-left:3px solid var(--red);padding-left:12px;
+}
+
+/* marquee */
+.marquee{
+  background:var(--red);color:#fff;overflow:hidden;
+  padding:16px 0;white-space:nowrap;
+}
+.marquee-track{
+  display:inline-flex;gap:0;animation:scroll 30s linear infinite;
+  font-family:'Fraunces',serif;font-weight:700;font-size:22px;letter-spacing:.02em;
+}
+.marquee-track span{padding:0 28px}
+.marquee-track i{font-style:normal;opacity:.6}
+@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* sections */
+section{max-width:1180px;margin:0 auto;padding:72px 22px}
+.section-label{
+  font-size:13px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--red);
+  margin-bottom:12px;
+}
+.section-title{
+  font-size:clamp(34px,5vw,52px);font-weight:900;margin-bottom:16px;
+}
+.section-title em{font-style:italic;color:var(--red);font-weight:600}
+.section-intro{font-size:17px;color:var(--ink-soft);max-width:62ch;margin-bottom:36px}
+.divider{border:none;border-top:1px solid var(--line);max-width:1180px;margin:0 auto}
+
+/* album */
+.album-top{
+  display:grid;grid-template-columns:340px 1fr;gap:44px;align-items:start;margin-bottom:44px;
+}
+.album-cover{
+  width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:4px;
+  box-shadow:0 18px 40px rgba(26,26,26,.22);
+}
+.album-facts{list-style:none;margin:22px 0}
+.album-facts li{
+  display:flex;justify-content:space-between;gap:20px;
+  padding:11px 0;border-bottom:1px solid var(--line);font-size:15px;
+}
+.album-facts li b{font-weight:800}
+.album-facts li span{color:var(--ink-soft);text-align:right}
+.stream-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.stream-link{
+  text-decoration:none;font-weight:800;font-size:13px;letter-spacing:.08em;text-transform:uppercase;
+  border:2px solid var(--ink);border-radius:999px;padding:11px 20px;color:var(--ink);
+}
+.stream-link:hover{background:var(--red);border-color:var(--red);color:#fff}
+
+/* tracklist table */
+.tracklist{width:100%;border-collapse:collapse;font-size:15px}
+.tracklist th{
+  text-align:left;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);
+  padding:10px 12px;border-bottom:2px solid var(--ink);
+}
+.tracklist td{padding:12px;border-bottom:1px solid var(--line);vertical-align:middle}
+.tracklist tr:hover td{background:var(--cream2)}
+.track-num{font-family:'Fraunces',serif;font-weight:700;color:var(--red);width:44px}
+.track-title{font-weight:700}
+.track-feat{color:var(--ink-soft)}
+.track-len{text-align:right;color:var(--ink-soft);font-variant-numeric:tabular-nums}
+.track-single{
+  display:inline-block;font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+  background:var(--red);color:#fff;border-radius:999px;padding:3px 9px;margin-left:8px;vertical-align:middle;
+}
+
+/* videos */
+.video-grid{display:grid;grid-template-columns:1.6fr 1fr;gap:36px;align-items:start}
+.video-frame{
+  position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:4px;overflow:hidden;
+}
+.video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.video-note{font-size:14px;color:var(--ink-soft);margin-top:12px}
+.video-note a{color:var(--red);font-weight:700}
+.video-side h3{font-size:28px;font-weight:700;margin-bottom:14px}
+.video-side p{color:var(--ink-soft);margin-bottom:16px}
+.video-side ul{list-style:none}
+.video-side li{padding:12px 0;border-bottom:1px solid var(--line);font-size:15px}
+.video-side li b{font-weight:800}
+.video-side li span{color:var(--ink-soft)}
+
+/* timeline */
+.timeline{position:relative;margin-left:8px;padding-left:38px;border-left:2px solid var(--red)}
+.timeline-item{position:relative;padding-bottom:38px}
+.timeline-item:last-child{padding-bottom:0}
+.timeline-item::before{
+  content:"";position:absolute;left:-47px;top:6px;width:16px;height:16px;border-radius:50%;
+  background:var(--cream);border:3px solid var(--red);
+}
+.timeline-year{
+  font-family:'Fraunces',serif;font-weight:900;font-size:30px;color:var(--red);line-height:1;margin-bottom:6px;
+}
+.timeline-item h3{font-size:22px;font-weight:700;margin-bottom:6px}
+.timeline-item p{color:var(--ink-soft);max-width:64ch}
+
+/* business rows */
+.biz-row{
+  display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;
+  padding:44px 0;border-top:1px solid var(--line);
+}
+.biz-row:first-of-type{border-top:none;padding-top:0}
+.biz-row.flip .biz-copy{order:2}
+.biz-row.flip .biz-stat{order:1}
+.biz-stat{
+  background:var(--ink);color:var(--cream);border-radius:4px;
+  padding:48px 36px;text-align:center;
+}
+.biz-stat.red{background:var(--red)}
+.biz-stat .stat-num{
+  font-family:'Fraunces',serif;font-weight:900;font-size:clamp(52px,7vw,84px);line-height:1;
+}
+.biz-stat .stat-label{
+  font-size:13px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;margin-top:12px;opacity:.85;
+}
+.biz-copy h3{font-size:30px;font-weight:900;margin-bottom:6px}
+.biz-copy .biz-tag{
+  font-size:13px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--red);margin-bottom:12px;
+}
+.biz-copy p{color:var(--ink-soft);margin-bottom:12px}
+.biz-copy p strong{color:var(--ink)}
+.biz-more{
+  margin-top:8px;padding:20px 24px;background:var(--cream2);border-radius:4px;font-size:15px;color:var(--ink-soft);
+}
+.biz-more strong{color:var(--ink)}
+
+/* film grid */
+.film-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:22px;
+}
+.film-card{
+  background:var(--white);border:1px solid var(--line);border-radius:4px;overflow:hidden;
+  display:flex;flex-direction:column;
+}
+.film-card img{width:100%;aspect-ratio:2/3;object-fit:cover;object-position:top}
+.film-card.type .film-art{
+  aspect-ratio:2/3;background:var(--ink);color:var(--cream);
+  display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:24px;
+}
+.film-card.type .film-art.red{background:var(--red)}
+.film-art .art-year{font-family:'Fraunces',serif;font-weight:900;font-size:52px;line-height:1}
+.film-art .art-kind{font-size:12px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;margin-top:10px;opacity:.8}
+.film-body{padding:18px 18px 20px}
+.film-body h3{font-size:20px;font-weight:700;margin-bottom:4px}
+.film-body .film-role{font-size:13px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--red);margin-bottom:8px}
+.film-body p{font-size:14px;color:var(--ink-soft)}
+
+/* tour */
+.tour-stats{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:40px;
+}
+.tour-stat{
+  background:var(--white);border:1px solid var(--line);border-radius:4px;padding:26px 20px;text-align:center;
+}
+.tour-stat b{display:block;font-family:'Fraunces',serif;font-weight:900;font-size:38px;color:var(--red);line-height:1.05}
+.tour-stat span{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
+.tour-layout{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+.tour-list{list-style:none}
+.tour-list li{
+  display:grid;grid-template-columns:110px 1fr;gap:16px;
+  padding:18px 0;border-bottom:1px solid var(--line);
+}
+.tour-date{font-family:'Fraunces',serif;font-weight:700;font-size:18px;color:var(--red);line-height:1.2}
+.tour-list h4{font-size:17px;font-weight:800}
+.tour-list p{font-size:14px;color:var(--ink-soft)}
+.tour-list .tour-tag{
+  display:inline-block;font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+  border:1.5px solid var(--red);color:var(--red);border-radius:999px;padding:2px 9px;margin-top:6px;
+}
+.tour-photos{display:grid;gap:18px}
+.tour-photos img{width:100%;border-radius:4px}
+.tour-photos figcaption{font-size:13px;color:var(--ink-soft);margin-top:8px}
+
+/* merch */
+.merch-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:22px;
+}
+.merch-card{
+  background:var(--white);border:1px solid var(--line);border-radius:4px;overflow:hidden;
+  display:flex;flex-direction:column;text-decoration:none;color:inherit;
+  transition:transform .15s ease,box-shadow .15s ease;
+}
+.merch-card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(26,26,26,.14)}
+.merch-card img{width:100%;aspect-ratio:1/1;object-fit:cover;background:#f5f5f5}
+.merch-body{padding:16px;display:flex;flex-direction:column;flex:1}
+.merch-body h3{font-size:16px;font-weight:800;font-family:'Manrope',sans-serif;line-height:1.3;margin-bottom:6px}
+.merch-price{font-family:'Fraunces',serif;font-weight:700;font-size:20px;color:var(--red);margin-top:auto}
+.merch-shop{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);margin-top:4px}
+
+/* social */
+.social-links{display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.social-links a{
+  display:flex;justify-content:space-between;align-items:center;gap:16px;
+  text-decoration:none;padding:22px 4px;border-bottom:1px solid var(--line);
+  transition:padding-left .15s ease;
+}
+.social-links a:hover{padding-left:14px}
+.social-links a:hover .social-name{color:var(--red)}
+.social-name{font-family:'Fraunces',serif;font-weight:900;font-size:clamp(26px,4.5vw,40px);line-height:1}
+.social-handle{font-size:14px;color:var(--ink-soft);text-align:right}
+.social-handle b{display:block;color:var(--ink);font-size:15px}
+
+/* cta + footer */
+.cta{
+  background:var(--ink);color:var(--cream);text-align:center;
+  padding:72px 22px;
+}
+.cta h2{font-size:clamp(36px,6vw,58px);font-weight:900;margin-bottom:14px}
+.cta h2 em{font-style:italic;color:#E07878;font-weight:600}
+.cta p{color:#C9C2B4;max-width:56ch;margin:0 auto 28px;font-size:17px}
+footer{
+  background:var(--ink);color:#8F887A;border-top:1px solid #333;
+  padding:28px 22px;text-align:center;font-size:13px;
+}
+footer a{color:#C9C2B4}
+
+/* falling leaves */
+.leaf{
+  position:fixed;top:-40px;z-index:9999;pointer-events:none;
+  animation:fall linear infinite;
+  user-select:none;
+}
+@keyframes fall{
+  to{transform:translateY(110vh) rotate(720deg)}
+}
+@media (prefers-reduced-motion:reduce){
+  .leaf{display:none}
+  .marquee-track{animation:none}
+}
+
+/* responsive */
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr;gap:36px;padding-top:44px}
+  .album-top{grid-template-columns:1fr}
+  .album-cover{max-width:340px}
+  .video-grid{grid-template-columns:1fr}
+  .biz-row{grid-template-columns:1fr;gap:24px}
+  .biz-row.flip .biz-copy{order:1}
+  .biz-row.flip .biz-stat{order:2}
+  .film-grid{grid-template-columns:repeat(2,1fr)}
+  .tour-stats{grid-template-columns:repeat(2,1fr)}
+  .tour-layout{grid-template-columns:1fr}
+  .merch-grid{grid-template-columns:repeat(2,1fr)}
+  .nav-links{display:none}
+}
+@media(max-width:520px){
+  .film-grid{grid-template-columns:1fr}
+  .merch-grid{grid-template-columns:1fr}
+  .track-feat{display:none}
+  .tour-list li{grid-template-columns:1fr;gap:4px}
+}
+</style>
+</head>
+<body>
+
+<div class="disclaimer">Demo Redesign Concept by Lexis Sapphire Studio &bull; Not Affiliated With Cardi B</div>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="#">CARDI <span>B</span></a>
+    <div class="nav-links">
+      <a href="#album">Album</a>
+      <a href="#videos">Videos</a>
+      <a href="#story">Story</a>
+      <a href="#business">Business</a>
+      <a href="#screen">Screen</a>
+      <a href="#tour">Tour</a>
+      <a href="#merch">Merch</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div>
+    <p class="hero-kicker">The New Album &bull; Out Now</p>
+    <h1>Am I<br><em>The Drama?</em></h1>
+    <p class="hero-sub">Seven years in the making. Twenty-three tracks. One question only Cardi B could ask. <strong>Am I The Drama?</strong> debuted at No. 1 on the Billboard 200, and the Little Miss Drama Tour became the highest grossing arena tour by a female rapper in history.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-red" href="https://cardib.lnk.to/AITD" target="_blank" rel="noopener">Listen to the Album</a>
+      <a class="btn btn-outline" href="#videos">Watch Outside</a>
+    </div>
+    <div class="hero-meta">
+      <div><b>160.7M</b>Instagram followers</div>
+      <div><b>5</b>Billboard Hot 100 No. 1s</div>
+      <div><b>23.2B</b>Spotify streams</div>
+    </div>
+  </div>
+  <div class="hero-img-wrap">
+    <img class="hero-img" src="hero.jpg" alt="Cardi B at the 2026 Essence Festival of Culture">
+    <p class="hero-caption">Cardi B at the 2026 Essence Festival of Culture. Born Belcalis Marlenis Almanzar in Manhattan, raised in Highbridge, the Bronx.</p>
+  </div>
+</header>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Grammy Winner <i>&bull;</i></span>
+    <span>5 Hot 100 No. 1 Singles <i>&bull;</i></span>
+    <span>$70M Tour Gross <i>&bull;</i></span>
+    <span>450,000+ Tickets Sold <i>&bull;</i></span>
+    <span>160.7M on Instagram <i>&bull;</i></span>
+    <span>First Solo Woman to Win Best Rap Album <i>&bull;</i></span>
+    <span>Grammy Winner <i>&bull;</i></span>
+    <span>5 Hot 100 No. 1 Singles <i>&bull;</i></span>
+    <span>$70M Tour Gross <i>&bull;</i></span>
+    <span>450,000+ Tickets Sold <i>&bull;</i></span>
+    <span>160.7M on Instagram <i>&bull;</i></span>
+    <span>First Solo Woman to Win Best Rap Album <i>&bull;</i></span>
+  </div>
+</div>
+
+<!-- ALBUM -->
+<section id="album">
+  <p class="section-label">The Album</p>
+  <h2 class="section-title">Seven years later, <em>she answered.</em></h2>
+  <p class="section-intro">Am I The Drama? arrived September 19, 2025 on Atlantic Records, her first studio album since Invasion of Privacy in 2018. The title borrows an iconic RuPaul's Drag Race line from Scarlet Envy. The cover puts Cardi in a red bodysuit surrounded by black crows, and the crows became the visual signature of the whole era.</p>
+
+  <div class="album-top">
+    <img class="album-cover" src="https://cdn.shopify.com/s/files/1/0602/1549/2813/files/CB_AMITHEDRAMA_FINAL_DIRTY.jpg?v=1762965179" alt="Am I The Drama? album cover, Cardi B in a red bodysuit surrounded by black crows">
+    <div>
+      <h3 class="serif" style="font-size:28px;font-weight:700;">Am I The Drama?</h3>
+      <ul class="album-facts">
+        <li><b>Released</b><span>September 19, 2025</span></li>
+        <li><b>Label</b><span>Atlantic Records</span></li>
+        <li><b>Tracks</b><span>23 songs, 70 minutes 49 seconds</span></li>
+        <li><b>Debut</b><span>No. 1, Billboard 200, 200,000 equivalent album units</span></li>
+        <li><b>Features</b><span>Summer Walker, Selena Gomez, Kehlani, Janet Jackson, Tyla, Lizzo, Cash Cobain, Lourdiz, Megan Thee Stallion</span></li>
+        <li><b>Lead single</b><span>Outside, peaked at No. 10 on the Hot 100</span></li>
+      </ul>
+      <div class="stream-row">
+        <a class="stream-link" href="https://cardib.lnk.to/AITD" target="_blank" rel="noopener">Listen Now</a>
+        <a class="stream-link" href="https://open.spotify.com/artist/4kYSro6naA4h99UJvo89HB" target="_blank" rel="noopener">Spotify</a>
+        <a class="stream-link" href="https://music.apple.com/us/artist/cardi-b/956078923" target="_blank" rel="noopener">Apple Music</a>
+        <a class="stream-link" href="https://tidal.com/artist/7301626" target="_blank" rel="noopener">Tidal</a>
+      </div>
+    </div>
+  </div>
+
+  <table class="tracklist">
+    <thead>
+      <tr><th>#</th><th>Track</th><th>Feature</th><th style="text-align:right">Length</th></tr>
+    </thead>
+    <tbody>
+      <tr><td class="track-num">01</td><td class="track-title">Dead</td><td class="track-feat">Summer Walker</td><td class="track-len">4:27</td></tr>
+      <tr><td class="track-num">02</td><td class="track-title">Hello</td><td class="track-feat"></td><td class="track-len">2:35</td></tr>
+      <tr><td class="track-num">03</td><td class="track-title">Magnet</td><td class="track-feat"></td><td class="track-len">2:58</td></tr>
+      <tr><td class="track-num">04</td><td class="track-title">Pick It Up</td><td class="track-feat">Selena Gomez</td><td class="track-len">2:40</td></tr>
+      <tr><td class="track-num">05</td><td class="track-title">Imaginary Playerz<span class="track-single">Single</span></td><td class="track-feat"></td><td class="track-len">3:27</td></tr>
+      <tr><td class="track-num">06</td><td class="track-title">Bodega Baddie</td><td class="track-feat"></td><td class="track-len">1:44</td></tr>
+      <tr><td class="track-num">07</td><td class="track-title">Salute</td><td class="track-feat"></td><td class="track-len">2:34</td></tr>
+      <tr><td class="track-num">08</td><td class="track-title">Safe<span class="track-single">Single</span></td><td class="track-feat">Kehlani</td><td class="track-len">2:57</td></tr>
+      <tr><td class="track-num">09</td><td class="track-title">Man Of Your Word</td><td class="track-feat"></td><td class="track-len">3:41</td></tr>
+      <tr><td class="track-num">10</td><td class="track-title">What&rsquo;s Goin On</td><td class="track-feat">Lizzo</td><td class="track-len">3:24</td></tr>
+      <tr><td class="track-num">11</td><td class="track-title">Shower Tears</td><td class="track-feat">Summer Walker</td><td class="track-len">3:27</td></tr>
+      <tr><td class="track-num">12</td><td class="track-title">Outside<span class="track-single">Single</span></td><td class="track-feat"></td><td class="track-len">3:26</td></tr>
+      <tr><td class="track-num">13</td><td class="track-title">Pretty &amp; Petty</td><td class="track-feat"></td><td class="track-len">3:03</td></tr>
+      <tr><td class="track-num">14</td><td class="track-title">Better Than You</td><td class="track-feat">Cash Cobain</td><td class="track-len">4:01</td></tr>
+      <tr><td class="track-num">15</td><td class="track-title">On My Back</td><td class="track-feat">Lourdiz</td><td class="track-len">3:51</td></tr>
+      <tr><td class="track-num">16</td><td class="track-title">ErrTime<span class="track-single">Single</span></td><td class="track-feat"></td><td class="track-len">2:26</td></tr>
+      <tr><td class="track-num">17</td><td class="track-title">Check Please<span class="track-single">Single</span></td><td class="track-feat"></td><td class="track-len">2:01</td></tr>
+      <tr><td class="track-num">18</td><td class="track-title">Principal</td><td class="track-feat">Janet Jackson</td><td class="track-len">2:17</td></tr>
+      <tr><td class="track-num">19</td><td class="track-title">Trophies</td><td class="track-feat"></td><td class="track-len">3:02</td></tr>
+      <tr><td class="track-num">20</td><td class="track-title">Nice Guy</td><td class="track-feat">Tyla</td><td class="track-len">3:16</td></tr>
+      <tr><td class="track-num">21</td><td class="track-title">Killin You Hoes</td><td class="track-feat"></td><td class="track-len">3:49</td></tr>
+      <tr><td class="track-num">22</td><td class="track-title">Up</td><td class="track-feat"></td><td class="track-len">2:36</td></tr>
+      <tr><td class="track-num">23</td><td class="track-title">WAP</td><td class="track-feat">Megan Thee Stallion</td><td class="track-len">3:07</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<hr class="divider">
+
+<!-- VIDEOS -->
+<section id="videos">
+  <p class="section-label">Videos</p>
+  <h2 class="section-title">Watch <em>Outside.</em></h2>
+  <div class="video-grid">
+    <div>
+      <div class="video-frame">
+        <iframe src="https://www.youtube.com/embed/pBQnhWDedt8" title="Cardi B - Outside (Official Video)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <p class="video-note">Cardi B, Outside (Official Video). <a href="https://www.youtube.com/watch?v=pBQnhWDedt8" target="_blank" rel="noopener">Watch on YouTube</a></p>
+    </div>
+    <div class="video-side">
+      <h3>The lead single that set the tone</h3>
+      <p>Outside dropped June 20, 2025 as the first official single from Am I The Drama? It peaked at No. 10 on the Billboard Hot 100 and earned a 2026 Grammy nomination for Best Rap Performance.</p>
+      <ul>
+        <li><b>Outside</b> <span>June 20, 2025, lead single</span></li>
+        <li><b>Imaginary Playerz</b> <span>August 15, 2025, samples Jay-Z</span></li>
+        <li><b>Safe</b> <span>September 19, 2025, feat. Kehlani</span></li>
+        <li><b>ErrTime (Remix)</b> <span>September 24, 2025, feat. Latto</span></li>
+        <li><b>Check Please</b> <span>October 15, 2025</span></li>
+      </ul>
+      <p style="margin-top:18px"><a href="https://www.youtube.com/@CardiB" target="_blank" rel="noopener" style="color:var(--red);font-weight:800;">More videos on Cardi B&rsquo;s YouTube channel</a></p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- TIMELINE -->
+<section id="story">
+  <p class="section-label">The Story</p>
+  <h2 class="section-title">From the Bronx <em>to the record books.</em></h2>
+  <p class="section-intro">Belcalis Marlenis Almanzar went from viral videos to the biggest stages in music in under a decade, and she did it on her own terms.</p>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-year">2015</div>
+      <h3>Love &amp; Hip Hop: New York</h3>
+      <p>Joins the VH1 reality series in season six and becomes its breakout star, turning a viral social following into a national audience.</p>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-year">2016</div>
+      <h3>First mixtape</h3>
+      <p>Releases Gangsta Bitch Music, Vol. 1, her debut mixtape, and follows it with Vol. 2 in 2017.</p>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-year">2017</div>
+      <h3>Bodak Yellow hits No. 1</h3>
+      <p>Bodak Yellow tops the Billboard Hot 100, making her the first solo female rapper to reach No. 1 since Lauryn Hill in 1998.</p>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-year">2018</div>
+      <h3>Invasion of Privacy, and a Grammy</h3>
+      <p>Her debut studio album drops and wins Best Rap Album at the Grammys, making her the first solo woman ever to win that category. It becomes the most streamed female rap album on Spotify and Apple Music.</p>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-year">2019</div>
+      <h3>Hustlers and Rhythm + Flow</h3>
+      <p>Makes her film debut as Diamond in Hustlers opposite Jennifer Lopez, and judges and executive produces Netflix&rsquo;s Rhythm + Flow with T.I. and Chance the Rapper.</p>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-year">2020</div>
+      <h3>WAP breaks the internet</h3>
+      <p>WAP with Megan Thee Stallion debuts at No. 1 on the Hot 100 and becomes a cultural event.</p>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-year">2021</div>
+      <h3>Up, F9, and Whipshots</h3>
+      <p>Up hits No. 1, she joins the Fast &amp; Furious franchise as Leysa in F9, and co-founds Whipshots, her vodka-infused whipped cream brand.</p>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-year">2022</div>
+      <h3>Playboy creative director</h3>
+      <p>Becomes creative director in residence at Playboy and a founding creative director for its Centerfold platform.</p>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-year">2025</div>
+      <h3>Am I The Drama?</h3>
+      <p>After seven years, the second album arrives September 19 and debuts at No. 1 on the Billboard 200. She also hosts WWE SummerSlam.</p>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-year">2026</div>
+      <h3>The tour, the hair line, the Super Bowl</h3>
+      <p>The Little Miss Drama Tour runs February through April and becomes the highest grossing arena tour by a female rapper in history. Grow-Good Beauty launches in March. She performs in the Super Bowl LX halftime show with Bad Bunny and Karol G.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- BUSINESS -->
+<section id="business">
+  <p class="section-label">The Business</p>
+  <h2 class="section-title">Not endorsements. <em>Ownership.</em></h2>
+  <p class="section-intro">Cardi B&rsquo;s portfolio has shifted from paid partnerships to equity. She owns pieces of the brands she builds, with an estimated net worth of $120M (Celebrity Net Worth) and a music catalog valued around $70M.</p>
+
+  <div class="biz-row">
+    <div class="biz-stat red">
+      <div class="stat-num">5M+</div>
+      <div class="stat-label">Cans sold</div>
+    </div>
+    <div class="biz-copy">
+      <p class="biz-tag">Co-Founder &bull; 2021</p>
+      <h3>Whipshots</h3>
+      <p>Vodka-infused whipped cream, co-founded with Starco Brands. The first million cans sold in 10 months, and the brand passed <strong>5 million cans</strong> within three years. Flavors include vanilla, caramel, mocha, lime, chocolate, and peppermint.</p>
+      <p>Unlike a paid ad, Whipshots is hers. She holds equity and profits from every can.</p>
+    </div>
+  </div>
+
+  <div class="biz-row flip">
+    <div class="biz-copy">
+      <p class="biz-tag">Joint Venture &bull; 2025</p>
+      <h3>Revolve Group</h3>
+      <p>Her first fully owned apparel and beauty brands, built through a joint venture with <strong>Revolve Group</strong>. After years of campaigns for Fashion Nova, Reebok, and Balenciaga, this is the move from endorser to founder.</p>
+    </div>
+    <div class="biz-stat">
+      <div class="stat-num">1st</div>
+      <div class="stat-label">Owned fashion &amp; beauty lines</div>
+    </div>
+  </div>
+
+  <div class="biz-row">
+    <div class="biz-stat red">
+      <div class="stat-num">3 yrs</div>
+      <div class="stat-label">In the making</div>
+    </div>
+    <div class="biz-copy">
+      <p class="biz-tag">Founder &bull; March 2026</p>
+      <h3>Grow-Good Beauty</h3>
+      <p>Her debut hair care brand, launched March 2026 after <strong>three years</strong> of development. The launch ran alongside the Little Miss Drama Tour, with Cardi talking about the line on The Tonight Show ahead of her sold out Madison Square Garden nights.</p>
+    </div>
+  </div>
+
+  <div class="biz-row flip">
+    <div class="biz-copy">
+      <p class="biz-tag">Global Brand Ambassador &bull; 2026</p>
+      <h3>Fashionphile</h3>
+      <p>Named <strong>2026 Global Brand Ambassador</strong> for the luxury resale platform&rsquo;s Get Your Bag campaign. Cardi, a real collector of Hermes, Chanel, and Goyard, is curating an exclusive collection of her personal pieces for the platform.</p>
+    </div>
+    <div class="biz-stat">
+      <div class="stat-num">2026</div>
+      <div class="stat-label">Global ambassador</div>
+    </div>
+  </div>
+
+  <div class="biz-row">
+    <div class="biz-stat red">
+      <div class="stat-num">Owner</div>
+      <div class="stat-label">Shareholder, not a spokesperson</div>
+    </div>
+    <div class="biz-copy">
+      <p class="biz-tag">Shareholder &amp; Ambassador &bull; March 2026</p>
+      <h3>Zevia</h3>
+      <p>Took an <strong>ownership stake</strong> in Zevia while starring in the soda company&rsquo;s biggest national campaign yet. Zevia also sponsored the Little Miss Drama Tour. Every can sold works in her favor long after the commercials stop.</p>
+    </div>
+  </div>
+
+  <div class="biz-more">
+    <strong>Also in the portfolio:</strong> Bardi Beauty cosmetics, Balenciaga brand ambassador, Reebok Aztrek sneaker partnership, Fashion Nova collections since 2018, and creative director in residence at Playboy (2022).
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- FILM & TV -->
+<section id="screen">
+  <p class="section-label">On Screen</p>
+  <h2 class="section-title">Film <em>&amp; television.</em></h2>
+  <p class="section-intro">From reality TV breakout to the big screen, the Fast &amp; Furious franchise, and the Super Bowl halftime stage.</p>
+  <div class="film-grid">
+    <div class="film-card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/d/d9/Hustlers_%28Official_Film_Poster%29.png" alt="Hustlers official film poster">
+      <div class="film-body">
+        <h3>Hustlers</h3>
+        <p class="film-role">Diamond &bull; 2019</p>
+        <p>Film debut opposite Jennifer Lopez, Constance Wu, and Lili Reinhart. Directed by Lorene Scafaria, released September 13, 2019.</p>
+      </div>
+    </div>
+    <div class="film-card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/2/2b/F9_film_poster.jpg" alt="F9 film poster">
+      <div class="film-body">
+        <h3>F9: The Fast Saga</h3>
+        <p class="film-role">Leysa &bull; 2021</p>
+        <p>Joins the Fast &amp; Furious franchise as Leysa, a confident associate of Dom Toretto. Released June 25, 2021.</p>
+      </div>
+    </div>
+    <div class="film-card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/e/e0/LHHNYS10titlecard.JPG" alt="Love and Hip Hop New York title card">
+      <div class="film-body">
+        <h3>Love &amp; Hip Hop: New York</h3>
+        <p class="film-role">Herself &bull; 2015-2017</p>
+        <p>The VH1 reality series where she broke out in season six and became one of the show&rsquo;s biggest stars.</p>
+      </div>
+    </div>
+    <div class="film-card type">
+      <div class="film-art red">
+        <div class="art-year">2019</div>
+        <div class="art-kind">Netflix &bull; Judge</div>
+      </div>
+      <div class="film-body">
+        <h3>Rhythm + Flow</h3>
+        <p class="film-role">Judge &amp; Executive Producer</p>
+        <p>Judged Netflix&rsquo;s hip-hop talent search alongside T.I. and Chance the Rapper, and executive produced the series.</p>
+      </div>
+    </div>
+    <div class="film-card type">
+      <div class="film-art">
+        <div class="art-year">2026</div>
+        <div class="art-kind">Halftime Show</div>
+      </div>
+      <div class="film-body">
+        <h3>Super Bowl LX Halftime</h3>
+        <p class="film-role">Performer &bull; February 8, 2026</p>
+        <p>Performed onstage during the Apple Music Super Bowl LX Halftime Show at Levi&rsquo;s Stadium with Bad Bunny and Karol G.</p>
+      </div>
+    </div>
+    <div class="film-card type">
+      <div class="film-art red">
+        <div class="art-year">2025</div>
+        <div class="art-kind">WWE &bull; Host</div>
+      </div>
+      <div class="film-body">
+        <h3>WWE SummerSlam 2025</h3>
+        <p class="film-role">Host &bull; MetLife Stadium</p>
+        <p>Hosted WWE SummerSlam at MetLife Stadium on August 2, 2025, and performed during the event.</p>
+      </div>
+    </div>
+    <div class="film-card type">
+      <div class="film-art">
+        <div class="art-year">2023</div>
+        <div class="art-kind">Voice Role</div>
+      </div>
+      <div class="film-body">
+        <h3>Baby Shark&rsquo;s Big Movie!</h3>
+        <p class="film-role">Voice &bull; 2023</p>
+        <p>Lent her voice to the animated feature Baby Shark&rsquo;s Big Movie!</p>
+      </div>
+    </div>
+    <div class="film-card type">
+      <div class="film-art red">
+        <div class="art-year">2020</div>
+        <div class="art-kind">Series</div>
+      </div>
+      <div class="film-body">
+        <h3>Cardi Tries</h3>
+        <p class="film-role">Herself &bull; 2020</p>
+        <p>Her own series, Cardi Tries, trying new skills and experiences on camera.</p>
+      </div>
+    </div>
+    <div class="film-card type">
+      <div class="film-art">
+        <div class="art-year">2016</div>
+        <div class="art-kind">BET &bull; Guest Role</div>
+      </div>
+      <div class="film-body">
+        <h3>Being Mary Jane</h3>
+        <p class="film-role">Guest Role &bull; BET</p>
+        <p>Joined the cast of the BET drama Being Mary Jane in a guest role.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- TOUR -->
+<section id="tour">
+  <p class="section-label">The Tour</p>
+  <h2 class="section-title">The tour that <em>made history.</em></h2>
+  <p class="section-intro">The Little Miss Drama Tour ran February 11 to April 18, 2026, Cardi&rsquo;s first headlining arena tour. Thirty-five shows, more than 450,000 tickets sold, and about $70 million grossed, making it the highest grossing and best attended arena tour by a female rapper in history.</p>
+
+  <div class="tour-stats">
+    <div class="tour-stat"><b>35</b><span>Shows</span></div>
+    <div class="tour-stat"><b>450K+</b><span>Tickets sold</span></div>
+    <div class="tour-stat"><b>$70M</b><span>Gross</span></div>
+    <div class="tour-stat"><b>No. 1</b><span>Female rap arena tour ever</span></div>
+  </div>
+
+  <div class="tour-layout">
+    <ul class="tour-list">
+      <li>
+        <div class="tour-date">Feb 11<br>2026</div>
+        <div><h4>Palm Desert, CA</h4><p>Acrisure Arena, opening night</p><span class="tour-tag">Kickoff</span></div>
+      </li>
+      <li>
+        <div class="tour-date">Feb 15<br>2026</div>
+        <div><h4>Los Angeles, CA</h4><p>Kia Forum, Inglewood, with a second night February 16</p></div>
+      </li>
+      <li>
+        <div class="tour-date">Mar 15<br>2026</div>
+        <div><h4>Detroit, MI</h4><p>Little Caesars Arena</p></div>
+      </li>
+      <li>
+        <div class="tour-date">Mar 25-26<br>2026</div>
+        <div><h4>New York, NY</h4><p>Madison Square Garden, back-to-back sold out nights in her hometown, with Tyla joining onstage</p><span class="tour-tag">Sold out</span></div>
+      </li>
+      <li>
+        <div class="tour-date">Apr 17-18<br>2026</div>
+        <div><h4>Atlanta, GA</h4><p>State Farm Arena, closing weekend</p><span class="tour-tag">Finale</span></div>
+      </li>
+    </ul>
+    <div class="tour-photos">
+      <figure>
+        <img src="https://www.bellanaija.com/wp-content/uploads/2026/03/SaveClip.App_632127666_18568110130041834_5722489310676831727_n.jpg" alt="Cardi B and Tyla performing together on stage during the Little Miss Drama Tour at Madison Square Garden">
+        <figcaption>Cardi B and Tyla performing together at Madison Square Garden, March 2026. Photo: Tyla/Instagram via BellaNaija.</figcaption>
+      </figure>
+      <figure>
+        <img src="https://www.bellanaija.com/wp-content/uploads/2026/03/SaveClip.App_656292976_18040316579773542_4367253520759160591_n.jpg" alt="Cardi B in a gold sequined gown at The Tonight Show Starring Jimmy Fallon">
+        <figcaption>Cardi B on The Tonight Show Starring Jimmy Fallon, March 24, 2026, ahead of her Madison Square Garden shows. Photo via BellaNaija.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- MERCH -->
+<section id="merch">
+  <p class="section-label">The Shop</p>
+  <h2 class="section-title">Official <em>merch.</em></h2>
+  <p class="section-intro">Tour gear, vinyl, and more from the official Cardi B store.</p>
+  <div class="merch-grid">
+    <a class="merch-card" href="https://store.cardib.com/products/little-miss-drama-tour-hoodie-navy" target="_blank" rel="noopener">
+      <img src="https://cdn.shopify.com/s/files/1/0602/1549/2813/files/Little-Miss-Drama-Tour-Navy-Hoodie-2026-FB.png?v=1795211593" alt="Little Miss Drama Tour Hoodie, navy">
+      <div class="merch-body"><h3>Little Miss Drama Tour Hoodie (Navy)</h3><div class="merch-price">$100.00</div><div class="merch-shop">Shop now</div></div>
+    </a>
+    <a class="merch-card" href="https://store.cardib.com/products/little-miss-drama-rhinestone-hoodie-1" target="_blank" rel="noopener">
+      <img src="https://cdn.shopify.com/s/files/1/0602/1549/2813/files/frontback_3.png?v=1774632330" alt="Little Miss Drama Rhinestone Hoodie">
+      <div class="merch-body"><h3>Little Miss Drama Rhinestone Hoodie</h3><div class="merch-price">$120.00</div><div class="merch-shop">Shop now</div></div>
+    </a>
+    <a class="merch-card" href="https://store.cardib.com/products/am-i-the-drama-apple-red-vinyl" target="_blank" rel="noopener">
+      <img src="https://cdn.shopify.com/s/files/1/0602/1549/2813/files/YnR_Vinyl_Standard.png?v=1750696243" alt="Am I The Drama Apple Red Vinyl">
+      <div class="merch-body"><h3>Am I The Drama? (Apple Red Vinyl)</h3><div class="merch-price">$39.98</div><div class="merch-shop">Shop now</div></div>
+    </a>
+    <a class="merch-card" href="https://store.cardib.com/products/am-i-the-drama-courtroom-edition-vinyl" target="_blank" rel="noopener">
+      <img src="https://cdn.shopify.com/s/files/1/0602/1549/2813/files/090225_Trial_ProductImages_Vinyl.png?v=1756847994" alt="Am I The Drama Courtroom Edition Vinyl">
+      <div class="merch-body"><h3>Am I The Drama? Courtroom Edition Vinyl</h3><div class="merch-price">$39.98</div><div class="merch-shop">Shop now</div></div>
+    </a>
+    <a class="merch-card" href="https://store.cardib.com/products/little-miss-drama-tour-poster" target="_blank" rel="noopener">
+      <img src="https://cdn.shopify.com/s/files/1/0602/1549/2813/files/poster.png?v=1777493440" alt="Little Miss Drama Tour Poster">
+      <div class="merch-body"><h3>Little Miss Drama Tour Poster</h3><div class="merch-price">$30.00</div><div class="merch-shop">Shop now</div></div>
+    </a>
+    <a class="merch-card" href="https://store.cardib.com/products/pretty-petty-tote-bag" target="_blank" rel="noopener">
+      <img src="https://cdn.shopify.com/s/files/1/0602/1549/2813/files/Tote_1.png?v=1774632580" alt="Pretty and Petty Tote Bag">
+      <div class="merch-body"><h3>Pretty &amp; Petty Tote Bag</h3><div class="merch-price">$30.00</div><div class="merch-shop">Shop now</div></div>
+    </a>
+    <a class="merch-card" href="https://store.cardib.com/products/crows-photo-tee" target="_blank" rel="noopener">
+      <img src="https://cdn.shopify.com/s/files/1/0602/1549/2813/files/CrowTee.png?v=1777492963" alt="Crows Photo Tee">
+      <div class="merch-body"><h3>Crows Photo Tee</h3><div class="merch-price">$45.00</div><div class="merch-shop">Shop now</div></div>
+    </a>
+    <a class="merch-card" href="https://store.cardib.com/products/invasion-of-privacy-vinyl-2xlp" target="_blank" rel="noopener">
+      <img src="https://cdn.shopify.com/s/files/1/0602/1549/2813/products/110818_cardib_iop_merch_vinylbanners_1_jpg.jpg?v=1673981881" alt="Invasion of Privacy Vinyl 2xLP">
+      <div class="merch-body"><h3>Invasion of Privacy (Vinyl 2xLP)</h3><div class="merch-price">$37.98</div><div class="merch-shop">Shop now</div></div>
+    </a>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- SOCIAL -->
+<section id="social">
+  <p class="section-label">Follow</p>
+  <h2 class="section-title">Find Cardi <em>everywhere.</em></h2>
+  <div class="social-links">
+    <a href="https://www.instagram.com/iamcardib/" target="_blank" rel="noopener">
+      <span class="social-name">Instagram</span>
+      <span class="social-handle"><b>@iamcardib</b>160.7M followers</span>
+    </a>
+    <a href="https://www.tiktok.com/@iamcardib" target="_blank" rel="noopener">
+      <span class="social-name">TikTok</span>
+      <span class="social-handle"><b>@iamcardib</b>Short form chaos, daily</span>
+    </a>
+    <a href="https://x.com/iamcardib" target="_blank" rel="noopener">
+      <span class="social-name">X</span>
+      <span class="social-handle"><b>@iamcardib</b>Unfiltered, always</span>
+    </a>
+    <a href="https://www.youtube.com/@CardiB" target="_blank" rel="noopener">
+      <span class="social-name">YouTube</span>
+      <span class="social-handle"><b>@CardiB</b>Music videos and more</span>
+    </a>
+    <a href="https://www.facebook.com/cardib" target="_blank" rel="noopener">
+      <span class="social-name">Facebook</span>
+      <span class="social-handle"><b>Cardi B</b>Official page</span>
+    </a>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta">
+  <h2>Am I The Drama? <em>Out now.</em></h2>
+  <p>Stream the album, watch the videos, and shop the official store. Seven years was worth the wait.</p>
+  <a class="btn btn-red" href="https://cardib.lnk.to/AITD" target="_blank" rel="noopener">Listen to the Album</a>
+</div>
+
+<footer>
+  <p>Fictional demo concept built by <a href="https://lexissapphirestudio.com/" target="_blank" rel="noopener">Lexis Sapphire Studio</a>. Not affiliated with Cardi B, Atlantic Records, or Warner Music Group. All music, images, and trademarks belong to their respective owners.</p>
+</footer>
+
+<script>
+// Falling autumn leaves, Studio signature, in front of everything
+(function(){
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var leaves = ['\u{1F341}', '\u{1F342}', '\u{1F343}', '\u{1F341}', '\u{1F342}'];
+  var count = 18;
+  for (var i = 0; i < count; i++) {
+    var leaf = document.createElement('span');
+    leaf.className = 'leaf';
+    leaf.textContent = leaves[i % leaves.length];
+    var size = 16 + Math.random() * 18;
+    leaf.style.fontSize = size + 'px';
+    leaf.style.left = (Math.random() * 100) + 'vw';
+    leaf.style.opacity = (0.5 + Math.random() * 0.5).toFixed(2);
+    var duration = 9 + Math.random() * 10;
+    leaf.style.animationDuration = duration + 's';
+    leaf.style.animationDelay = (-Math.random() * duration) + 's';
+    document.body.appendChild(leaf);
+  }
+})();
+</script>
+</body>
+</html>
